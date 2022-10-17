@@ -12,13 +12,13 @@ documentation = "https://docs.rs/msp430fr2355"
 
 [dependencies]
 bare-metal = "0.2.0"
-msp430 = "0.2.2"
+msp430 = "0.4.0"
 vcell = "0.1.2"
 msp430-atomic = "0.1.2"
 
 [dependencies.msp430-rt]
 optional = true
-version = "0.2.0"
+version = "0.4.0"
 
 [features]
 rt = ["msp430-rt/device"]
