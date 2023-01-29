@@ -42,6 +42,11 @@ impl RegisterBlock {
     pub fn ucb1ctlw0(&self) -> &UCB1CTLW0 {
         unsafe { &*(((self as *const Self) as *const u8).add(0usize) as *const UCB1CTLW0) }
     }
+    #[doc = "0x02 - eUSCI_Bx Control Word Register 1"]
+    #[inline(always)]
+    pub fn ucb1ctlw1(&self) -> &UCB1CTLW1 {
+        unsafe { &*(((self as *const Self) as *const u8).add(2usize) as *const UCB1CTLW1) }
+    }
     #[doc = "0x06 - eUSCI_Bx Bit Rate Control Register 1"]
     #[inline(always)]
     pub fn ucb1brw_spi(&self) -> &UCB1BRW_SPI {
